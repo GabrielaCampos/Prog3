@@ -1,0 +1,100 @@
+// Exercício de Fixação - exerc2
+<? php
+
+
+classe empregados {
+      public $nome;
+      public $sobrenome;
+      public $smes;
+      public $sanual;
+
+public function __construct(){
+
+   $this-> nome= "Gabriela";
+   $this-> sobrenome= "Campos";
+   $this-> smes= 25000;
+    
+}
+ 
+public function setnome ($get) {
+  return $this-> nome= $get;    
+}
+ 
+public function getnome () {
+   return $this-> nome;
+}
+  
+public function setsobrenome ($get1) {
+   return $this-> sobrenome= $get1;
+}
+
+public function getsobrenome () {
+   return $this-> sobrenome;
+}
+
+public function setsmes ($ get2) {
+   return $this-> smes= $get2;
+}
+
+public function getsmes () {
+   return $this-> smes;
+}
+
+public function setsanual () {
+   return $this-> sanual= $this-> smes * 12;
+}
+
+public function getsanual () {
+   return $this-> sanual;
+}
+
+public function validasmes () {
+    if ($this-> smes <0) {
+    $this-> smes = 0.0;
+    }
+}
+
+public function aumentasmes () {
+    $porc = ($this-> smes * 10) / 100;
+    $this-> smes = $this-> smes + $porc;
+    }
+}
+
+// empregado 1
+
+ $epg1= new empregado ();
+ $epg1-> validasmes ();
+ $epg1-> setsanual ();
+ 
+echo "O salário anual de {$epg1-> getnome ()} 
+      {$epg1-> getsobrenome ()} é R$ {$epg1-> getsanual ()
+      } \ n "; 
+
+ $epg1-> aumentasmes ();
+ $epg1-> setsanual ();
+ 
+echo "O salário anual de {$epg1-> getnome ()} 
+      recebeu um aumento de 10% e agora é de R$ {$ epg1-> getsanual ()
+      } \ n ";
+
+// empregado 2
+
+ $epg2 = new empregado ();
+ $epg2-> setnome ("Davison");
+ $epg2-> setsobrenome ("Cavalheiro");
+ $epg2-> setsmes (25000);
+ $epg2-> validasmes ();
+ $epg2-> setsanual ();
+ 
+echo "O salário anual do {$ epg2-> getnome ()}  
+     {$epg2-> getsobrenome ()} é R $ {$epg2-> getsanual ()
+     } \ n "; 
+ 
+ $epg2-> aumentasmes ();
+ $epg2-> setsanual ();
+ 
+echo "O salário anual do {$epg2-> getnome ()} 
+      recebeu um aumento de 10% e agora é de R$ {$epg2-> getsanual ()
+      } \ n ";
+      
+?>
