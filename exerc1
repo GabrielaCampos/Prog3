@@ -1,0 +1,18 @@
+// Exercício de Fixação - exerc1
+<! - O que é um automóvel -->
+ 
+Automóvel é um veículo motorizado com rodas usadas para transporte, eles possuem motor, transmissão,
+sistema elétrico, direção, freio, acelerador, sistema de arrefecimento, etc.
+ 
+ 
+atributos dos 5 objetos listados:
+ 
+-Motor: responsável por transformar energia térmica (queima do combustível)
+em energia mecânica (movimento do carro).
+-Transmissão: responsável por transmitir a força do motor até as rodas (Embreagem,
+caixa de marchas ...).
+-Sistema Elétrico: possui uma função de gerar / armazenar / distribuir energia
+para todas as funções do automóvel.
+-Direção: transmita os comandos do condutor ao veículo.
+-Sistema de Arrefecimento: reduz o calor produzido em excesso pelo motor através da água ou ar.
+ 
